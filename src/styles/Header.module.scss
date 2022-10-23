@@ -1,0 +1,34 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    
+    img{
+        width: 25px;
+    }
+
+    p{
+        margin: 10px;
+    }
+}
+
+.mainNav{
+    background-color: lightcoral;
+
+    ul{
+        list-style-type: none;
+        
+        li{
+            display: block;
+        }
+    }
+}
+
+.search{
+    background-color: aquamarine;
+}

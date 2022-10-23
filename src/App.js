@@ -1,11 +1,12 @@
-import Styles from './App.module.scss';
+import React from 'react'
+import Header from "./components/Header.jsx"
 
-function App() {
+const App = () => {
   return (
-    <div className={Styles.App}>
-      <h1>hello iki</h1>
-    </div>
-  );
+    <>
+      <Header/>
+    </>
+  )
 }
 
 export default App;
