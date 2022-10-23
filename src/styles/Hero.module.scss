@@ -1,0 +1,30 @@
+.heroWrapper{
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // color: whitesmoke;
+
+    .headingWrapper{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-size: 100px;
+            user-select: none; 
+        }
+    }
+
+    ul{
+        list-style-type: none;;
+
+        li{
+            padding: 10px 0;
+            font-size: 25px;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}
