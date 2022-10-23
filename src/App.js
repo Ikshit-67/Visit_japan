@@ -1,12 +1,16 @@
-import Styles from "./App.module.scss";
-import Middle from "./components/middle/Middle";
+import React from "react";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import MiddleWrapper from "./components/middle/MiddleWrapper.jsx";
 
-function App() {
+const App = () => {
   return (
-    <div className={Styles.App}>
-      <Middle />
-    </div>
+    <>
+      <Header />
+      {/* <Hero /> */}
+      <MiddleWrapper />
+    </>
   );
-}
+};
 
 export default App;
