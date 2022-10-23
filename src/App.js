@@ -1,9 +1,10 @@
-import Styles from './App.module.scss';
+import Styles from "./App.module.scss";
+import Middle from "./components/middle/Middle";
 
 function App() {
   return (
     <div className={Styles.App}>
-      <h1>hello iki</h1>
+      <Middle />
     </div>
   );
 }
