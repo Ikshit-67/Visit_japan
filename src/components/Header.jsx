@@ -11,10 +11,10 @@ const Header = () => {
         </div>
         <div className={Styles.mainNav}>
             <ul>
-                <li>home</li>
-                <li>home</li>
-                <li>home</li>
-                <li>home</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Lolm</a></li>
             </ul>
         </div>
         <div className={Styles.search}>
