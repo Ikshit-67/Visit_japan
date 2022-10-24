@@ -7,30 +7,30 @@ const Bottom = () => {
   return (
     <div className={Styles.bottom}>
       <div className={Styles.infoContainer}>
-        <h3>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
-        </h3>
+        </p>
         <Button className={Styles.learnMoreAndArrow}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
         </Button>
       </div>
       <div className={Styles.infoContainer}>
-        <h3>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
-        </h3>
+        </p>
         <Button className={Styles.learnMoreAndArrow}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
         </Button>
       </div>
       <div className={Styles.infoContainer}>
-        <h3>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
-        </h3>
+        </p>
         <Button className={Styles.learnMoreAndArrow}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
