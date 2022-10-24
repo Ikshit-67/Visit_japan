@@ -1,0 +1,22 @@
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+
+    .infoContainer{
+        padding: 55px;
+
+        .learnMoreAndArrow{
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img{
+                width: 20px;
+                margin: 15px;
+            }
+        }
+    }
+}
+

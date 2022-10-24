@@ -8,7 +8,7 @@ const Header = () => {
         <div className={Styles.headerWrapper}>
             <div className={Styles.logos}>
                 <img src={headerData.japanFlag} alt="" />
-                <p>Travel</p>
+                <p>TRAVEL</p>
             </div>
             <div className={Styles.mainNav}>
                 <ul>
