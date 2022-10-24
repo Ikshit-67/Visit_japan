@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "../styles/Hero.module.scss";
+import { aniData } from "../utils/animationData";
 
 const Hero = ({ currentCity }) => {
   return (
@@ -7,15 +8,18 @@ const Hero = ({ currentCity }) => {
       <div className={Styles.headingWrapper}>
         <h1>Visit</h1>
         <div className={Styles.cityName}>
-          <h1>{currentCity}</h1>
+          <h1>{currentCity.title}</h1>
         </div>
       </div>
       <div></div>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+        {aniData.map((ele, ind) => {
+          return (
+            <li className={`${currentCity.id === ind ? Styles.active : ""}`}>
+              {ind + 1}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
