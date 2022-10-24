@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        color: whitesmoke;
+    }
+
+    .carouselWrapper{
+
+        padding: 60px;
+
+        .carousel{
+            display: flex;
+        }
+    }
+}
