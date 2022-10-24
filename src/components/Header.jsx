@@ -2,7 +2,8 @@ import React from "react";
 import Styles from "../styles/Header.module.scss";
 import { headerData } from "../utils/headerData";
 import SearchIcon from "@mui/icons-material/Search";
-import { IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import { IconButton, TextField } from "@mui/material";
 
 const Header = () => {
   return (
@@ -31,9 +32,17 @@ const Header = () => {
         {/* <div className={Styles.search}>
           <img src={headerData.searchIcon} alt="" />
         </div> */}
-        <IconButton className={Styles.search}>
-          <SearchIcon />
-        </IconButton>
+        <div className={Styles.searchbarDiv}>
+          <IconButton className={Styles.search}>
+            <SearchIcon />
+          </IconButton>
+          {/* <div className={Styles.input_wrapper}>
+            <TextField variant="standard" size="small" label={""} />
+            <IconButton>
+              <CloseIcon />
+            </IconButton>
+          </div> */}
+        </div>
       </div>
       <div className={Styles.navbarSlider}>
         <p>i dont know how to make this slider, plij phigur it out</p>
