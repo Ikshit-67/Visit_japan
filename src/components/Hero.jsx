@@ -12,15 +12,19 @@ const Hero = ({ currentCity }) => {
           <h1>{currentCity.title}</h1>
         </div>
         <div className={Styles.latNdLong}>
-          <LocationOnIcon />
-          <p data-content="latitude and longitude">{currentCity.cords}</p>
+          <div className={Styles.latLongWrapper}>
+            <LocationOnIcon />
+            <p data-content="latitude and longitude">{currentCity.cords}</p>
+          </div>
         </div>
       </div>
       <div></div>
       <ul>
         {aniData.map((ele, ind) => {
           return (
-            <li className={`${currentCity.id === ind ? Styles.active : ""}`}>
+            <li
+              className={`${currentCity.id === ind ? Styles.active : ""} links`}
+            >
               <p> {ind + 1}</p>
               <div className={Styles.neonEffect}></div>
             </li>

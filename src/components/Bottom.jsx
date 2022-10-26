@@ -11,7 +11,7 @@ const Bottom = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
         </p>
-        <Button className={Styles.learnMoreAndArrow}>
+        <Button className={`${Styles.learnMoreAndArrow} links`}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
         </Button>
@@ -21,7 +21,7 @@ const Bottom = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
         </p>
-        <Button className={Styles.learnMoreAndArrow}>
+        <Button className={`${Styles.learnMoreAndArrow} links`}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
         </Button>
@@ -31,7 +31,7 @@ const Bottom = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           consequatur?
         </p>
-        <Button className={Styles.learnMoreAndArrow}>
+        <Button className={`${Styles.learnMoreAndArrow} links`}>
           <p>learn more</p>
           <img src={bottomData.arrowIcon} alt="" />
         </Button>

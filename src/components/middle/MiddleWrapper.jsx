@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Hero from "../Hero";
 import Styles from "../../styles/middle/middleWrapper.module.scss";
 import { aniData } from "../../utils/animationData";
+import { StatesContext } from "../../App";
 
 const MiddleWrapper = () => {
+  const { offsetY } = useContext(StatesContext);
   const [animationData, setAnimationData] = useState({
     currentImgData: aniData[0],
   });
@@ -33,7 +35,7 @@ const MiddleWrapper = () => {
         </div> */}
         <Hero currentCity={animationData.currentImgData} />
       </div>
-      <div className={Styles.wrapper}></div>
+
       {aniData.map((ele, ind) => {
         return (
           <div
@@ -42,7 +44,13 @@ const MiddleWrapper = () => {
               animationData.currentImgData.id === ind ? Styles.show : ""
             }`}
           >
-            <img src={ele.img} alt="" />
+            <img
+              src={ele.img}
+              alt=""
+              style={{
+                transform: `scale(1.25) translateY(${offsetY * 0.25}px)`,
+              }}
+            />
           </div>
         );
       })}

@@ -5,14 +5,37 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cabin', sans-serif;
+  cursor: none !important;
+  /* color: #fff; */
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 
 body{
   width: 100vw;
   overflow-x: hidden;
-  /* background-color: rgb(71, 71, 71); */
+
 }
+/* p,h1,h2,h3,h4,h5,h6,article,li,a,button{
+  position: relative;
+  z-index: 4;
+} */
+
+
 
 .highlight:hover .mouseFollower{
   transform: scale(2);
+}
+
+.mouseFollowerHover {
+  height: 100px !important;
+  width: 100px !important;
+  transform: translate(-50%, -50%) rotate(135deg) !important;
+}
+.mouseFollowerMiniHover {
+  height: 50px !important;
+  width: 50px !important;
 }

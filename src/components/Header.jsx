@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Styles from "../styles/Header.module.scss";
 import { headerData } from "../utils/headerData";
 import SearchIcon from "@mui/icons-material/Search";
-import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, TextField } from "@mui/material";
 
 const Header = () => {
+  const links = useRef();
+
   return (
     <div className={Styles.header}>
       <div className={Styles.headerWrapper}>
@@ -15,16 +16,18 @@ const Header = () => {
         </div>
         <div className={Styles.mainNav}>
           <ul>
-            <li>
+            <li ref={links} className="links">
               <a href="#">Home</a>
             </li>
-            <li>
-              <a href="#">About</a>
+            <li ref={links}>
+              <a href="#" className="links">
+                About
+              </a>
             </li>
-            <li>
+            <li ref={links} className="links">
               <a href="#">Contact</a>
             </li>
-            <li>
+            <li ref={links} className="links">
               <a href="#">Lolm</a>
             </li>
           </ul>
@@ -33,7 +36,7 @@ const Header = () => {
           <img src={headerData.searchIcon} alt="" />
         </div> */}
         <div className={Styles.searchbarDiv}>
-          <IconButton className={Styles.search}>
+          <IconButton className={`${Styles.search} links`}>
             <SearchIcon />
           </IconButton>
           {/* <div className={Styles.input_wrapper}>

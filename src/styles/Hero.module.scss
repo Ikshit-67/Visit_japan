@@ -36,17 +36,23 @@
       // background-color: red;
       margin-top: 30px;
       margin-left: 10px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      svg {
-        margin-right: 5px;
-      }
-      p {
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        width: 100%;
+      .latLongWrapper {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        svg {
+          margin-right: 5px;
+        }
+        p {
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          width: 100%;
+        }
       }
       &::after,
       &::before {

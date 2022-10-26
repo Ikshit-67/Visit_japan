@@ -46,11 +46,28 @@
       display: flex;
 
       li {
-        padding: 1rem;
-
+        position: relative;
+        padding: 10px;
         a {
           text-decoration: none;
           color: white;
+          // cursor: url(../assets/pointer1.svg), pointer;
+          padding: 1rem;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 10%;
+          height: 1px;
+          background-color: #fff;
+          width: 00%;
+          transition: 0.3s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            width: 80%;
+          }
         }
       }
     }
